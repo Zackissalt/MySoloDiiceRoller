@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/rollResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rollResult"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:onClick="rollButton"
+        android:text="@string/roll"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rollResult" />
+
+    <EditText
+        android:id="@+id/numberDice"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/dice"
+        android:inputType="number"
+        android:singleLine="false"
+        android:text="@string/one"
+        app:layout_constraintEnd_toEndOf="@+id/roll"
+        app:layout_constraintTop_toBottomOf="@+id/rollResult" />
+
+    <EditText
+        android:id="@+id/numberSide"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/sides"
+        android:inputType="number"
+        android:text="@string/six"
+        app:layout_constraintStart_toEndOf="@+id/numberDice"
+        app:layout_constraintTop_toBottomOf="@+id/rollResult" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:checked="false"
+        android:text="@string/showRolls"
+        app:layout_constraintEnd_toEndOf="@+id/roll"
+        app:layout_constraintStart_toStartOf="@+id/roll"
+        app:layout_constraintTop_toBottomOf="@+id/roll"
+        tools:checked="false" />
+
+</android.support.constraint.ConstraintLayout>

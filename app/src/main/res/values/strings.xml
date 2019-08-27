@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Solo Dice Roller</string>
+    <string name="roll">roll</string>
+    <string name="numberDice">Number of Dice</string>
+    <string name="numberSides">Number of Sides</string>
+    <string name="one">1</string>
+    <string name="six">6</string>
+    <string name="sides">Sides</string>
+    <string name="dice">Dice#</string>
+    <string name="rollResult">Result</string>
+    <string name="showRolls">Show individual rolls</string>
+</resources>
